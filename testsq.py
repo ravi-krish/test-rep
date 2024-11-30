@@ -2,8 +2,14 @@ import os
 import streamlit as st
 from groq import Groq
 
+# Hardcode your Groq API key here
+API_KEY = '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'
+
+# Initialize the Groq client with the hardcoded API key
+client = Groq(api_key=API_KEY)
+
 # Initialize the Groq client with your API key
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+#client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 def get_chat_completion(prompt):
     try:
