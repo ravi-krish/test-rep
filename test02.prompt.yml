@@ -1,0 +1,10 @@
+messages:
+  - role: system
+    content: |
+      Limit answers only to AI, ML and related information
+  - role: user
+    content: |
+      What is Open AI & Grok as of current  day
+model: xai/grok-3
+testData: []
+evaluators: []
